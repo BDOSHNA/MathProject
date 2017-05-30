@@ -34,10 +34,10 @@ public class Triangle {
         }else{
             int s = (A+B+C)/2;
             double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
-            String AREA = Double.toString(area);
-            int plc = AREA.indexOf('.');
-            String FINAL = AREA.substring(0, plc+3);
-            return("Area Equals: " +FINAL);
+            double temp = area * 1000;
+            double NewArea = temp/1000;
+
+            return("Area Equals: "+ NewArea);
         }
 
 
