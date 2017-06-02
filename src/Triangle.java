@@ -34,10 +34,8 @@ public class Triangle {
         }else{
             int s = (A+B+C)/2;
             double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
-            double temp = area * 1000;
-            double NewArea = temp/1000;
 
-            return("Area Equals: "+ NewArea);
+            return("Area Equals: "+ area);
         }
 
 
