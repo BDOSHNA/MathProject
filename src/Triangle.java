@@ -15,7 +15,7 @@ public class Triangle {
         int a = Integer.parseInt(AA);
         int b = Integer.parseInt(BB);
         int c = Integer.parseInt(CC);
-        int Sides[] =new int[3];
+        int Sides[] = new int[3];
         Sides[0] = a;
         Sides[1] = b;
         Sides[2] = c;
@@ -23,23 +23,12 @@ public class Triangle {
         int A = Sides[0];
         int B = Sides[1];
         int C = Sides[2];
-        boolean check;
         if (A+B>C){
-            check = true;
-        }else {
-            check=false;
-        }
-        if(!check) {
-            return ("Please Enter Valid Side Lengths");
-        }else{
             int s = (A+B+C)/2;
             double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
-
             return("Area Equals: "+ area);
+        } else {
+            return ("Please Enter Valid Side Lengths");
         }
-
-
-
-
     }
 }
