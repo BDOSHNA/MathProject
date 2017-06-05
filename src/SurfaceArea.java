@@ -13,7 +13,7 @@ public class SurfaceArea {
             System.out.println("Enter Prism Height");
             double height = scan.nextDouble();
 
-            if (numSides < 1 || side < 0 || height <= 0) {
+            if ((side <= 0 && numSides > 0) || (numSides <= 2 && !(numSides == 0)) || height <= 0) {
                 System.out.println("Invalid Input(s)");
             } else if (numSides == 0){
                 System.out.println("Enter Radius of Cylinder Base");
