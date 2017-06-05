@@ -30,7 +30,6 @@ public class Trap {
         double ar = Math.sqrt(s*(s-S1)*(s-S2)*(s-(BiggerBase-SmallerBase)));
         double h = (2*ar)/(S1*(BiggerBase-SmallerBase));
         double Final = ((B1+B2)/2)* h;
-        System.out.println(h);
         return("Area equals: "+Final);//edit this when done
     }
 }
