@@ -1,13 +1,12 @@
 /**
  * Created by BDOSHNA on 5/24/2017.
  */
-import sun.java2d.Surface;
-
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-       
+
         System.out.println("Welcome To Area Calculator, Press any Enter to continue");
         scan.nextLine(); //just delaying the while loop
 
@@ -30,18 +29,18 @@ public class Main {
                     break;
                 case 2: System.out.println(Parallelogram.ParallelogramMath());
                     break;
-                case 3: System.out.println(P.PolygonMath());
+                case 3: System.out.println(Polygon.PolygonMath());
                     break;
-                case 4: System.out.println(Tr.TrapMath());
+                case 4: System.out.println(Trap.TrapMath());
                     break;
-                case 5: System.out.println(C.CircleMath());
+                case 5: System.out.println(Circle.CircleMath());
                     break;
-                case 6: System.out.println(SA.SurfaceAreaMath());
+                case 6: System.out.println(SurfaceArea.SurfaceAreaMath());
                     break;
             }
             System.out.println("    "); //blank space line
-            System.out.println("Hit enter to Continue");
-            String temp2 = scan.nextLine();//delay again
+            System.out.println("Hit Enter to Continue");
+            scan.nextLine();//delay again
             System.out.println("_______________________________"); //line in between loops
 
         }
